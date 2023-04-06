@@ -14,11 +14,15 @@ public class evenNumbers {
             if (sourceNumber % 2 == 0) {
                 evens.add(sourceNumber);
             }
-/*            Predicate<Integer> fn;
-            fn = (n) -> (n % 2) == 0;
- */
-        }
-                System.out.println("Чётные числа: " + evens);
 
+
+            Predicate<Integer> fn;
+
+            integerStreamOf.filter(fn = (n) -> (n % 2) == 0);
+
+            System.out.println(integerStreamOf.count());
+        }
+
+                System.out.println("Чётные числа: " + evens);
             }
         }
