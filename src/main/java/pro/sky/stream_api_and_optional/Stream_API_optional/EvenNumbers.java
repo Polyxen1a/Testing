@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
-public class evenNumbers {
+public class EvenNumbers {
     public static void findEvenNumbers(Integer[] sourceNumbers) {
 
         List<Integer> evens = new ArrayList<Integer>();
@@ -14,14 +14,11 @@ public class evenNumbers {
             if (sourceNumber % 2 == 0) {
                 evens.add(sourceNumber);
             }
-
-
-            Predicate<Integer> fn;
-
-            integerStreamOf.filter(fn = (n) -> (n % 2) == 0);
-
+                long count = Stream.of(sourceNumbers).filter(x -> x%2==0).count();
+                System.out.println(count);
+            }
             System.out.println(integerStreamOf.count());
-        }
+
 
                 System.out.println("Чётные числа: " + evens);
             }

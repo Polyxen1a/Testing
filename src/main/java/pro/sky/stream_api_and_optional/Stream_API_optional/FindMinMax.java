@@ -2,11 +2,10 @@ package pro.sky.stream_api_and_optional.Stream_API_optional;
 
 import java.util.*;
 import java.util.function.BiConsumer;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class findMinMax {
+public class FindMinMax {
 
     public static <T> void findMinMax(
             Stream<? extends T> stream,
