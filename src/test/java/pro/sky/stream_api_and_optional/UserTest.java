@@ -14,7 +14,7 @@ public class UserTest {
     @BeforeAll
     public static void createUsers() {
         user1 = new User();
-        user2 = new User("test", 20, "test@test.ru");
+        user2 = new User("test", "test@test.ru");
     }
 
     @Test
